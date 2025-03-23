@@ -1,0 +1,70 @@
+.Navbar{
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #D0DDD0;
+  color: #727D73;
+  transition: 0.5s all ease;
+  position: sticky;
+  top: 0;
+  &.active{
+    background-color: white;
+    color: #727D73;
+  }
+  .container{
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+
+    .logo{
+      display: flex;
+      justify-content: space-between;
+      font-size: 36px;
+      font-weight: bold;
+      font-family: Lucida Handwriting, serif;
+      .text{
+        color: #727D73;
+      }
+      .dot{
+        color: #F0F0D7;
+      }
+    }
+    .links{
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      font-weight: 500;
+      font-family: Montserrat, sans-serif;
+      button{
+        color: white;
+        padding: 10px 20px;
+        border: 1px solid #F0F0D7;
+        background-color: transparent;
+        cursor: pointer;
+        border-radius: 5px;
+        font-family: Montserrat, sans-serif;
+      }
+      button:hover{
+        background-color: #F0F0D7;
+        color: #727D73;
+        border: 1px solid #727D73;
+      }
+    }
+  }
+  hr{
+    width: 100%;
+    height: 0;
+    border: 0.5px solid #F0F0D7;
+  }
+  .menu{
+    width: 1400px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    color: #727D73;
+    font-family: Montserrat, sans-serif;
+  }
+}
