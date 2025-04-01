@@ -3,17 +3,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #D0DDD0;
-  color: #727D73;
+  background-color: #a1c5d3;
   transition: 0.5s all ease;
   position: sticky;
   top: 0;
+  color: white;
+
   &.active{
     background-color: white;
-    color: #727D73;
+    color: black;
+
   }
   .container{
-    width: 1400px;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     padding: 20px 0px;
@@ -25,10 +27,10 @@
       font-weight: bold;
       font-family: Lucida Handwriting, serif;
       .text{
-        color: #727D73;
+        color: #f05630;
       }
       .dot{
-        color: #F0F0D7;
+        color: #f9d161;
       }
     }
     .links{
@@ -37,26 +39,69 @@
       align-items: center;
       font-weight: 500;
       font-family: Montserrat, sans-serif;
+      span:hover {
+        color: #f9d161;
+        cursor: pointer;
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        position: relative;
+        svg{
+          margin-left: 17px;
+          width: 32px;
+          height: 32px;
+        }
+
+        img {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .options {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          padding: 20px;
+          background-color: white;
+          border-radius: 10px;
+          z-index: 999;
+          border: 1px solid lightgrey;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 200px;
+          font-weight: 300;
+          color: gray;
+        }
+      }
       button{
-        color: white;
+        font-weight: bold;
+        color: black;
         padding: 10px 20px;
-        border: 1px solid #F0F0D7;
+        border: 1px solid black;
         background-color: transparent;
         cursor: pointer;
         border-radius: 5px;
         font-family: Montserrat, sans-serif;
       }
       button:hover{
-        background-color: #F0F0D7;
-        color: #727D73;
-        border: 1px solid #727D73;
+        background-color: #f9d161;
+        color: black;
+        border: 1px solid black;
       }
     }
+
   }
   hr{
     width: 100%;
     height: 0;
-    border: 0.5px solid #F0F0D7;
+    border: 0.5px solid #f9d161;
   }
   .menu{
     width: 1400px;
@@ -64,7 +109,7 @@
     display: flex;
     justify-content: space-between;
     font-weight: 300;
-    color: #727D73;
+    color: gray;
     font-family: Montserrat, sans-serif;
   }
 }
