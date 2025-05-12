@@ -16,7 +16,7 @@ const Featured = () => {
                 </div>
                 <div className="search">
                     <div className="searchInput">
-                        <img src="search.png" alt="" />
+                        <img src="../../../public/search.png" alt="" />
                         <input type="text" placeholder='Try "building mobil app"'/>
                     </div>
                     <button>Search</button>

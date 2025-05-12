@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   padding: 100px 0px;
+  z-index: 1;
+  overflow: hidden;
 
   .container {
     width: 1400px;
