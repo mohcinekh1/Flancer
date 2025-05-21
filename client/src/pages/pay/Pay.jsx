@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 import CheckoutForm from "../../components/checkoutForm/CheckoutForm";
 
 const stripePromise = loadStripe(
-  "paste your public key"
+  "pk_test_51RRBYt2e9SbrxlltpeEfeo2oa6eHzlSXhPFVU2yfHsBjuUZmztSWphKdjhdJtfN1o3hvo8vY7x7lhLm7fet4tKA000KI4jD1RL"
 );
 
 const Pay = () => {
