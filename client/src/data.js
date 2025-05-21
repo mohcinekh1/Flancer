@@ -1,53 +1,62 @@
 export const cards = [
   {
     id: 1,
-    title: "AI Artists",
-    desc: "Add talent to AI",
+    title: "AI Image Generation",
+    desc: "Bring your ideas to life",
     img: "https://images.pexels.com/photos/7532110/pexels-photo-7532110.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    cat: "AI",
   },
   {
     id: 2,
-    title: "Logo Design",
-    desc: "Build yor brand",
+    title: "Logo & Branding",
+    desc: "Build your visual identity",
     img: "https://images.pexels.com/photos/11295165/pexels-photo-11295165.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    cat: "Design",
   },
   {
     id: 3,
-    title: "WordPress",
-    desc: "Customize your site",
+    title: "WordPress Development",
+    desc: "Customize and scale your site",
     img: "https://images.pexels.com/photos/4371669/pexels-photo-4371669.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    cat: "Programming",
   },
   {
     id: 4,
-    title: "Voice Over",
-    desc: "Share your message",
+    title: "Voice Over Services",
+    desc: "Share your message globally",
     img: "https://images.pexels.com/photos/7608079/pexels-photo-7608079.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    cat: "Music",
   },
   {
     id: 5,
-    title: "Video Explainer",
-    desc: "Engage your audience",
+    title: "Animated Explainers",
+    desc: "Engage with motion",
     img: "https://images.pexels.com/photos/13388047/pexels-photo-13388047.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    cat: "Animation",
   },
   {
     id: 6,
-    title: "Social Media",
-    desc: "Reach more customers",
+    title: "Social Media Marketing",
+    desc: "Grow your audience",
     img: "https://images.pexels.com/photos/11378899/pexels-photo-11378899.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    cat: "Marketing",
   },
   {
     id: 7,
-    title: "SEO",
-    desc: "Unlock growth online",
+    title: "SEO Optimization",
+    desc: "Rank higher on Google",
     img: "https://images.pexels.com/photos/4820241/pexels-photo-4820241.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    cat: "Marketing",
   },
   {
     id: 8,
-    title: "Illustration",
-    desc: "Color you dreams",
+    title: "Custom Illustration",
+    desc: "Color your dreams",
     img: "https://images.pexels.com/photos/15032623/pexels-photo-15032623.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    cat: "Design",
   },
 ];
+
 
 export const projects = [
   {

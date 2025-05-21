@@ -22,7 +22,7 @@ function Home() {
           <div className="item">
             <h1>A whole world of freelance talent at your fingertips</h1>
             <div className="title">
-              <img src="./img/check.png" alt="" />
+              <img src="/img/check.png" alt="" />
               The best for every budget
             </div>
             <p>
@@ -30,7 +30,7 @@ function Home() {
               just project-based pricing.
             </p>
             <div className="title">
-              <img src="./img/check.png" alt="" />
+              <img src="/img/check.png" alt="" />
               Quality work done quickly
             </div>
             <p>
@@ -38,7 +38,7 @@ function Home() {
               minutes.
             </p>
             <div className="title">
-              <img src="./img/check.png" alt="" />
+              <img src="/img/check.png" alt="" />
               Protected payments, every time
             </div>
             <p>
@@ -46,7 +46,7 @@ function Home() {
               until you approve the work.
             </p>
             <div className="title">
-              <img src="./img/check.png" alt="" />
+              <img src="/img/check.png" alt="" />
               24/7 support
             </div>
             <p>
@@ -55,7 +55,7 @@ function Home() {
             </p>
           </div>
           <div className="item">
-            <video src="./img/video.mp4" controls />
+            <img src="/img/freelance.png" alt=""  />
           </div>
         </div>
       </div>
@@ -151,7 +151,7 @@ function Home() {
         <div className="container">
           <div className="item">
             <h1>
-              fiverr <i>business</i>
+              FLancer <i>business</i>
             </h1>
             <h1>
               A business solution designed for <i>teams</i>
@@ -161,20 +161,20 @@ function Home() {
               dedicated to businesses
             </p>
             <div className="title">
-              <img src="./img/check.png" alt="" />
+              <img src="/img/check.png" alt="" />
               Connect to freelancers with proven business experience
             </div>
 
             <div className="title">
-              <img src="./img/check.png" alt="" />
+              <img src="/img/check.png" alt="" />
               Get matched with the perfect talent by a customer success manager
             </div>
 
             <div className="title">
-              <img src="./img/check.png" alt="" />
+              <img src="/img/check.png" alt="" />
               Manage teamwork and boost productivity with one powerful workspace
             </div>
-            <button>Explore Fiverr Business</button>
+            <button>Explore FLancer Business</button>
           </div>
           <div className="item">
             <img

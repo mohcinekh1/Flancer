@@ -12,15 +12,17 @@ function Gigs() {
   const maxRef = useRef();
 
   const { search } = useLocation();
+  const params = new URLSearchParams(search);
+  const category = params.get("cat");
 
   const { isLoading, error, data, refetch } = useQuery({
     queryKey: ["gigs"],
     queryFn: () =>
       newRequest
-        .get(
-          `/gigs${search}&min=${minRef.current.value}&max=${maxRef.current.value}&sort=${sort}`
-        )
-        .then((res) => {
+          .get(
+              `/gigs${search ? search + "&" : "?"}min=${minRef.current.value}&max=${maxRef.current.value}&sort=${sort}`
+          )
+          .then((res) => {
           return res.data;
         }),
   });
@@ -34,20 +36,31 @@ function Gigs() {
 
   useEffect(() => {
     refetch();
-  }, [sort]);
+  }, [sort, search]);
 
   const apply = () => {
     refetch();
   };
 
+  const categoryMap = {
+    Design: "Graphics & Design",
+    Animation: "Video & Animation",
+    Writing: "Writing & Translation",
+    AI: "AI Services",
+    Marketing: "Digital Marketing",
+    Music: "Music & Audio",
+    Programming: "Programming & Tech",
+    Business: "Business",
+    Lifestyle: "Lifestyle",
+  };
+  const categoryDisplayName = categoryMap[category] || "All Gigs";
+
+
   return (
     <div className="gigs">
       <div className="container">
-        <span className="breadcrumbs">Liverr > Graphics & Design ></span>
-        <h1>AI Artists</h1>
-        <p>
-          Explore the boundaries of art and technology with Liverr's AI artists
-        </p>
+        <span className="breadcrumbs">Flancer</span>
+        <h1>{categoryDisplayName}</h1>
         <div className="menu">
           <div className="left">
             <span>Budget</span>
@@ -60,7 +73,7 @@ function Gigs() {
             <span className="sortType">
               {sort === "sales" ? "Best Selling" : "Newest"}
             </span>
-            <img src="./img/down.png" alt="" onClick={() => setOpen(!open)} />
+            <img src="/img/down.png" alt="" onClick={() => setOpen(!open)} />
             {open && (
               <div className="rightMenu">
                 {sort === "sales" ? (

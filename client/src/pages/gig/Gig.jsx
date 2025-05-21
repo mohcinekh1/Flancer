@@ -32,6 +32,8 @@ function Gig() {
     enabled: !!userId,
   });
 
+  const images = Array.isArray(data?.images) && data.images.length > 0 ? data.images : [data.cover];
+
   return (
     <div className="gig">
       {isLoading ? (
@@ -70,8 +72,8 @@ function Gig() {
               </div>
             )}
             <Slider slidesToShow={1} arrowsScroll={1} className="slider">
-              {data.images.map((img) => (
-                <img key={img} src={img} alt="" />
+              {images.map((img, i) => (
+                  <img key={i} src={img} alt="" />
               ))}
             </Slider>
             <h2>About This Gig</h2>
