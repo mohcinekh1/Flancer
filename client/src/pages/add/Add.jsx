@@ -66,7 +66,6 @@ const Add = () => {
         navigate("/mygigs");
       },
       onError: (error) => {
-        console.log("hna lprob");
         console.error("Submission failed:", error);
       },
     });

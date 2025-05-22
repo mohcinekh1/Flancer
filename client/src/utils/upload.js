@@ -1,18 +1,16 @@
+// client/src/utils/upload.js
 import axios from "axios";
 
 const upload = async (file) => {
-  console.log(file);
-  const data = new FormData();
-  data.append("file", file);
-  //data.append("upload_preset", "fiverr");
+  const formData = new FormData();
+  formData.append("file", file);
 
   try {
-    const res = await axios.post(import.meta.env.VITE_UPLOAD_LINK, data);
-
-    const { url } = res.data;
-    return url;
+    const res = await axios.post("/api/upload", formData);
+    return res.data.url;
   } catch (err) {
-    console.log(err);
+    console.error("Error uploading file:", err);
+    throw err;
   }
 };
 
